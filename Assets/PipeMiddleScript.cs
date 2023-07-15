@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PipeMiddleScript : MonoBehaviour
+public class PipeMiddleScript: MonoBehaviour
 {
     public LogicScript logic;
     
@@ -10,6 +10,7 @@ public class PipeMiddleScript : MonoBehaviour
     void Start()
     {
         logic = GameObject.FindGameObjectsWithTag("Logic").GetComponent<LogicScript>();
+        //this is the line that I seem to have a problem with^^^
     }
 
     // Update is called once per frame
